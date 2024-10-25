@@ -17,7 +17,7 @@ namespace GrafosAPI3._0.Controllers
         }
 
         [HttpGet("bfsAllPaths")]
-        public ActionResult<List<List<string>>> GetAllPaths([FromQuery] string actor1, [FromQuery] string actor2)
+        public ActionResult<List<string>> GetAllPaths([FromQuery] string actor1, [FromQuery] string actor2)
         {
             if (string.IsNullOrEmpty(actor1) || string.IsNullOrEmpty(actor2))
             {
